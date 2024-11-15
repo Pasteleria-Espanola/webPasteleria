@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-------------- Local Stylesheet Link -------------->
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <!-------------- BoxIcons Stylesheet Link -------------->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+     <!-------------- FontAwesome Stylesheet Link -------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-------------- Owl Carousel Stylesheet Links -------------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-------------- AOS Stylesheet Link -------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-------------- Light Gallery Stylesheet Link -------------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+
+    <title>Pastelería Española</title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <!-------------- PreNav Text Start-------------->
+
+        <div id="prenav-text">
+            <div class="flex-row">
+                <div class="contact-info">Phone no: <span>+00 1234 567</span> or email us:
+                    <span>emailsample@email.com</span>
+                </div>
+                <div class="opening-times flex-row">
+                    Lun - Sab / 8:00-19:00 . Dom / 10:00-18:00
+                    <ul class="social-links flex-row">
+                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-------------- PreNav Text End-------------->
+
+
+        <!-------------- Navbar Start-------------->
+
+        <nav id="navbar" class="navbar flex-row">
+
+            <div class="nav-icon menu-btn-wrapper">
+                <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+            </div>
+
+            <div class="logo">
+                <img src="/Images/Logo/logo.jfif" alt="Logo Pastelería Española" class="logo-image">
+                <h5>Pastelería Española</h5>
+            </div>
+            
+
+            <ul id="nav-items" class="nav-items">
+                <li><a href="#home" class="nav-links">HOME</a></li>
+                <li><a href="#menu" class="nav-links">MENU</a></li>
+                <li><a href="#gallery" class="nav-links">GALERIA</a></li>
+                  <li><a href="#map" class="nav-links">UBICACION</a></li>
+                <li><a href="#footer" class="nav-links">CONTACTO</a></li>
+            </ul>
+
+            <ul class="nav-btns">
+
+                <div class="search-btn-wrapper nav-icon">
+                    <i class="searchbtn bx bx-search-alt-2"></i>
+                    <div id="search-form" class="search-form">
+                        <form action="#">
+                            <input type="search" class="search-data" placeholder="Search" required>
+                            <button type="submit" class="bx bx-search-alt-2"></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="cart-btn-wrapper nav-icon">
+                    <i class="cartbtn bx bx-cart"></i>
+                    <div id="cart" class="cart flex-row">
+                        <span>No Products In The Cart</span>
+                    </div>
+                </div>
+
+                <div class="nav-icon">
+                    <i class="darkbtn bx bx-moon"></i>
+                </div>
+            </ul>
+        </nav>
+
+        <!-------------- Navbar End-------------->
+
+
+    </header>
+
+
+    <!-------------- Home Section Start-------------->
+
+    <section id="home">
+        <div class="home-carousel owl-carousel owl-theme">
+            <div class="slide slide1">
+                <div class="content">
+                    <p class="sub-heading">PASTELERÍA ESPAÑOLA</p>
+                    <h1 class="heading">Sabores Auténticos</h1>
+                    <p class="sub-heading-2">Desde 1972</p>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content">
+                    <p class="sub-heading">PASTELERÍA ESPAÑOLA</p>
+                    <h1 class="heading">Calidad Artesanal</h1>
+                    <p class="sub-heading-2">Para cada ocasión</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------- Home Section End-------------->
+
+
+    <!-------------- Menu Section Start-------------->
+
+    <section id="menu" class="menu-section">
+
+        <div class="section-heading">
+            <h3>Nuestro Menu</h3>
+            <div class="square-wrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <!-------------- Menu Nav -------------->
+        <div class="menu-tabs flex-row" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+            <div class="menu-tab-item active" data-target="#main-dishes">
+                <i class="fa-solid fa-cookie-bite"></i>
+                <span>Bocaditos</span>
+            </div>
+            <div class="menu-tab-item" data-target="#starters">
+                <i class="fa-solid fa-candy-cane"></i>
+                <span>Dulces</span>
+            </div>
+            <div class="menu-tab-item" data-target="#desserts">
+                <i class="bx bx-cake"></i>
+                <span>Pasteles</span>
+            </div>
+            <div class="menu-tab-item" data-target="#drinks">
+                <i class="fa-solid fa-cheese"></i>
+                <span>Postres</span>
+            </div>
+            <div class="menu-tab-item" data-target="#main-dishes">
+                <i class="bx bxs-cake"></i>
+                <span>Tortas</span>
+            </div>
+        </div>
+
+        <!-------------- Main Dishes -------------->
+        <div id="main-dishes" class="menu-tab-content show"  data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+
+                        <!-- Menu Item Start -->
+                        <div class="menu-item">
+                            <div class="menu-item-inner">
+                                <div class="food-img">
+                                    <img src="/Images/Bocaditos/mix.jpg" alt="Mix de Bocaditos">
+                                </div>
+                                <div class="text">
+                                    <div class="dish-details">
+                                        <h2>Mix de Bocaditos x25</h2>
+                                        <div class="line"></div>
+                                        <span class="price">$5.50</span>
+                                    </div>
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item End -->
+
+                                    <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Bocaditos/mix.jpg" alt="Mix de Bocaditos">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Mix de Bocaditos x50</h2>
+                            <div class="line"></div>
+                            <span class="price">$10.00</span>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Item End -->
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Bocaditos/mix.jpg" alt="Mix de Bocaditos">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Mix de Bocaditos x100</h2>
+                            <div class="line"></div>
+                            <span class="price">$18.50</span>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Item End -->
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Bocaditos/mix.jpg" alt="Mix de Bocaditos">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Mix de Bocaditos x150</h2>
+                            <div class="line"></div>
+                            <span class="price">$27.50</span>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+                        <!-- Menu Item Start -->
+                        <div class="menu-item">
+                            <div class="menu-item-inner">
+                                <div class="food-img">
+                                    <img src="/Images/Bocaditos/mix.jpg" alt="Mix de Bocaditos">
+                                </div>
+                                <div class="text">
+                                    <div class="dish-details">
+                                        <h2>Mix de Bocaditos x200</h2>
+                                        <div class="line"></div>
+                                        <span class="price">$36.00</span>
+                                    </div>
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Menu Item End -->
+
+        </div>
+
+        <!-------------- Starters -------------->
+        <div id="starters" class="menu-tab-content">
+
+                        <!-- Menu Item Start -->
+                        <div class="menu-item">
+                            <div class="menu-item-inner">
+                                <div class="food-img">
+                                    <img src="/Images/Dulces/alfajor.webp" alt="Alfajor">
+                                </div>
+                                <div class="text">
+                                    <div class="dish-details">
+                                        <h2>Alfajor x1</h2>
+                                        <div class="line"></div>
+                                        <span class="price">$0.25</span>
+                                    </div>
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Menu Item End -->
+                                                <!-- Menu Item Start -->
+                        <div class="menu-item">
+                            <div class="menu-item-inner">
+                                <div class="food-img">
+                                    <img src="/Images/Dulces/alfajor.webp" alt="Alfajor">
+                                </div>
+                                <div class="text">
+                                    <div class="dish-details">
+                                        <h2>Alfajor x4</h2>
+                                        <div class="line"></div>
+                                        <span class="price">$0.75</span>
+                                    </div>
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Menu Item End -->
+                                                <!-- Menu Item Start -->    
+                        <div class="menu-item">
+                            <div class="menu-item-inner">
+                                <div class="food-img">
+                                    <img src="/Images/Dulces/alfajor.webp" alt="Alfajor">
+                                </div>
+                                <div class="text">
+                                    <div class="dish-details">
+                                        <h2>Alfajor x10</h2>
+                                        <div class="line"></div>
+                                        <span class="price">$2.00</span>
+                                    </div>
+                                    <button class="add-to-cart">Agregar al carrito</button>
+                                </div>
+                            </div>                 
+                         
+
+        </div>
+
+        <!-------------- Desserts -------------->
+        <div id="desserts" class="menu-tab-content">
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Dessert/1.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Dessert Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Dessert/2.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Dessert Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Dessert/3.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Dessert Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Dessert/4.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Dessert Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+
+        </div>
+
+        <!-------------- Drinks -------------->
+        <div id="drinks" class="menu-tab-content">
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Drinks/1.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Drink Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Drinks/2.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Drink Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Drinks/3.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Drink Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="/Images/Drinks/4.jpg" alt="#">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Drink Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="desc">
+                            <p>Searsoned and handcarved to order.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+
+        </div>
+
+    </section>
+
+    <!-------------- Menu Section End-------------->
+
+
+
+
+
+    <!-------------- Gallery Section Start-------------->
+
+    <section id="gallery">
+
+        <div class="section-heading">
+            <h3>Galeria de Imagenes</h3>
+            <div class="square-wrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div class="gallery-wrapper flex-row" data-aos="fade-right" data-aos-duration="1000">
+
+            <!-- Gallery Img Start -->
+            <a class="gallery-img" href="/Images/Gallery/food-galler-img-1.jpg">
+                <img src="/Images/Gallery/1.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!-- Gallery Img End -->
+
+
+            <!-- Gallery Img Start -->
+            <a class="gallery-img" href="/Images/Gallery/food-galler-img-2.jpg">
+                <img src="/Images/Gallery/2.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!-- Gallery Img End -->
+
+
+            <!-- Gallery Img Start -->
+            <a class="gallery-img" href="/Images/Gallery/food-galler-img-3.jpg">
+                <img src="/Images/Gallery/3.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!-- Gallery Img End -->
+
+
+            <!-- Gallery Img Start -->
+            <a class="gallery-img" href="/Images/Gallery/food-galler-img-4.jpg">
+                <img src="/Images/Gallery/4.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!-- Gallery Img End -->
+
+
+            <!-- Gallery Img Start -->
+            <a class="gallery-img" href="/Images/Gallery/food-galler-img-5.jpg">
+                <img src="/Images/Gallery/5.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!-- Gallery Img End -->
+
+
+            <!-- Gallery Img Start -->
+            <a class="gallery-img" href="/Images/Gallery/food-galler-img-6.jpg">
+                <img src="/Images/Gallery/6.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!-- Gallery Img End -->
+
+
+        </div>
+
+    </section>
+
+    <!-------------- Gallery Section End-------------->
+
+<!-------------- Map Section Start -------------->
+
+<section class="map" id="map">
+    <div class="section-heading">
+      <h3>Encuéntranos en el Mapa</h3>
+    </div>
+  
+    <!-- Map Container Start -->
+    <div id="google-map" data-aos="fade-up" data-aos-duration="1000">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2770108369027!2d-80.72848342503487!3d-0.9438191990470596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be133c8a461b9%3A0x4274f1c4063a453d!2zUGFzdGVsZXLDrWEgRXNwYcOxb2xh!5e0!3m2!1ses-419!2sec!4v1731533107563!5m2!1ses-419!2sec" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Map Container End -->
+  
+  </section>
+  
+  <!-------------- Map Section End -------------->
+
+
+    <!-------------- Footer Start-------------->
+
+    <footer id="footer">
+        <div class="footer-top flex-row">
+
+            <div class="flex-col">
+                <h4 class="logo-name">PASTELERIA ESPAÑOLA</h4>
+
+                <p class="desc">En Pastelería Española, nos dedicamos a crear momentos dulces y especiales. 
+                    Con recetas tradicionales y un toque de innovación, ofrecemos una amplia variedad de productos
+                     frescos y deliciosos, elaborados con ingredientes de la mejor calidad.</p>
+
+                <ul class="social-links">
+                    <li><a href="#"><i class="icon bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon bx bxl-instagram"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="flex-col">
+                <h4 class="heading">DIRECCIÓN</h4>
+
+                <p class="desc">Av. 3<br>Entre Calle 15 y 16</p>
+                <p class="desc">Telefono: <br> 0969918935 <br> 0993053717
+                    <br>email: <br> pastisseriaespanyola@outlook.com</p>
+            </div>
+
+            <div class="flex-col">
+                <h4 class="heading">HORARIOS DE ATENCION</h4>
+                <ul class="timings flex-col">
+                    <li>
+                        <p class="days">Lunes</p>
+                        <div class="time">8:00 - 19:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Martes</p>
+                        <div class="time">8:00 - 19:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Miercoles</p>
+                        <div class="time">8:00 - 19:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Jueves</p>
+                        <div class="time">8:00 - 19:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Viernes</p>
+                        <div class="time">8:00 - 19:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Sabado</p>
+                        <div class="time">8:00 - 19:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Domingo</p>
+                        <div class="time">10:00 - 18:00</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-col">
+                <h4 class="heading">TAGS</h4>
+                <a href="#menu">Menu</a>
+                <a href="#gallery" class="nav-links">Galeria</a>
+                <a href="#map" class="nav-links">Ubicacion</a>
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom flex-row">
+            <span>Copyright &copy 2024 All rights reserved | Made by Leandro Flores</span>
+        </div>
+
+    </footer>
+
+    <!-------------- Footer End -------------->
+
+
+    <!-------------- JQuery Script -------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-------------- Owl Carousel Script -------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-------------- AOS Script -------------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-------------- Light Gallery Script -------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery-wrapper'));
+    </script>
+
+    <!-------------- Local JS Script -------------->
+    <script src="/JS/script.js"></script>
+
+</body>
+
+
+</html>
