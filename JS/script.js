@@ -29,7 +29,6 @@ window.addEventListener('scroll', function () {
 
 // Nav Buttons
 let menuBtn = document.querySelector('.menu-btn');
-let searchBtn = document.querySelector('.searchbtn');
 let cartBtn = document.querySelector('.cartbtn');
 let darkBtn = document.querySelector('.darkbtn');
 let signImg = document.getElementById('signImg');
@@ -46,23 +45,6 @@ menuBtn.onclick = function () {
     else {
         menuBtn.classList.remove("bx-x");
         menuBtn.classList.add("bx-menu");
-    }
-}
-
-
-
-searchBtn.onclick = function () {
-    // Toggles Active Class In Search Form On Click
-    document.getElementById("search-form").classList.toggle('active');
-
-    // Changes Icon on Click 
-    if (document.getElementById("search-form").classList.contains('active')) {
-        searchBtn.classList.remove("bx-search-alt-2");
-        searchBtn.classList.add("bx-x");
-    }
-    else {
-        searchBtn.classList.remove("bx-x");
-        searchBtn.classList.add("bx-search-alt-2");
     }
 }
 
