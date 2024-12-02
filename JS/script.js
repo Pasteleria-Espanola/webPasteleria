@@ -89,35 +89,29 @@ darkBtn.onclick = function () {
 }
 
 // Menu-Section
-let menuTabs = document.querySelector('.menu-tabs');
-menuTabs.addEventListener('click', function (e) {
+// Menu-Section
+let menuTabs = document.querySelectorAll('.menu-tab-item');
+let menuContents = document.querySelectorAll('.menu-tab-content');
 
-    // If Clicked Tab Does Not Contains Active Class
-    if (e.target.classList.contains('menu-tab-item') && !e.target.classList.contains('active')) {
+menuTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Remover la clase 'active' de todas las pestañas
+        menuTabs.forEach(item => item.classList.remove('active'));
+        // Agregar la clase 'active' a la pestaña seleccionada
+        tab.classList.add('active');
 
-        // Gets Data Attribute
-        const target = e.target.getAttribute("data-target");
+        // Ocultar todas las secciones de contenido
+        menuContents.forEach(content => content.classList.remove('show'));
 
-        // Removes Active Class From Active Tab
-        menuTabs.querySelector('.active').classList.remove('active');
+        // Mostrar la sección de contenido correspondiente
+        const target = tab.getAttribute('data-target');
+        const targetContent = document.querySelector(target);
+        if (targetContent) {
+            targetContent.classList.add('show');
+        }
+    });
+});
 
-        // ADD Active Class From Clicked Tab
-        e.target.classList.add("active");
-
-        let menuSection = document.querySelector(".menu-section");
-
-        // Removes Show Class From Active Tab Content
-        menuSection.querySelector(".menu-tab-content.show").classList.remove("show");
-
-        // Adds Show Class To Clicked Tab Content
-        menuSection.querySelector(target).classList.add("show");
-
-    }
-    // If Clicked Tab Contains Active Class
-    else {
-        return //Returns Nothing
-    }
-})
 
 // Events Carousel
 $('.events-carousel').owlCarousel({
