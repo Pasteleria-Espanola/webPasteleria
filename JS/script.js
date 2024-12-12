@@ -29,7 +29,6 @@ window.addEventListener('scroll', function () {
 
 // Nav Buttons
 let menuBtn = document.querySelector('.menu-btn');
-let cartBtn = document.querySelector('.cartbtn');
 let darkBtn = document.querySelector('.darkbtn');
 let signImg = document.getElementById('signImg');
 
@@ -45,21 +44,6 @@ menuBtn.onclick = function () {
     else {
         menuBtn.classList.remove("bx-x");
         menuBtn.classList.add("bx-menu");
-    }
-}
-
-cartBtn.onclick = function () {
-    // Toggles Active Class In Cart On Click
-    document.getElementById("cart").classList.toggle('active');
-
-    // Changes Icon on Click 
-    if (document.getElementById("cart").classList.contains('active')) {
-        cartBtn.classList.remove("bx-cart");
-        cartBtn.classList.add("bx-x");
-    }
-    else {
-        cartBtn.classList.remove("bx-x");
-        cartBtn.classList.add("bx-cart");
     }
 }
 
@@ -89,7 +73,6 @@ darkBtn.onclick = function () {
 }
 
 // Menu-Section
-// Menu-Section
 let menuTabs = document.querySelectorAll('.menu-tab-item');
 let menuContents = document.querySelectorAll('.menu-tab-content');
 
@@ -111,7 +94,6 @@ menuTabs.forEach(tab => {
         }
     });
 });
-
 
 // Events Carousel
 $('.events-carousel').owlCarousel({

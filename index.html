@@ -9,6 +9,7 @@
 
     <!-------------- Local Stylesheet Link -------------->
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/cart.css">
 
     <!-------------- BoxIcons Stylesheet Link -------------->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -64,42 +65,46 @@
 
         <!-------------- Navbar Start-------------->
 
-        <nav id="navbar" class="navbar flex-row">
+<nav id="navbar" class="navbar flex-row">
 
-            <div class="nav-icon menu-btn-wrapper">
-                <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+    <div class="nav-icon menu-btn-wrapper">
+        <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+    </div>
+
+    <div class="logo">
+        <img src="/Images/Logo/logo.jfif" alt="Logo Pastelería Española" class="logo-image">
+    </div>
+
+    <ul id="nav-items" class="nav-items">
+        <li><a href="#home" class="nav-links">HOME</a></li>
+        <li><a href="#menu" class="nav-links">MENU</a></li>
+        <li><a href="#gallery" class="nav-links">GALERIA</a></li>
+        <li><a href="#map" class="nav-links">UBICACION</a></li>
+        <li><a href="#footer" class="nav-links">CONTACTO</a></li>
+    </ul>
+    
+    <ul class="nav-btns">
+        <!-- Carrito -->
+        <div class="cart-btn-wrapper nav-icon">
+            <i class="cartbtn bx bx-cart"></i>
+            <span id="cart-count">0</span> <!-- Indicador del número de productos -->
+            <div id="cart" class="cart">
+                <ul id="cart-items"></ul>
+                <button id="whatsapp-button" style="display: none;">Pedir vía WhatsApp</button>
             </div>
-        
-            <div class="logo">
-                <img src="/Images/Logo/logo.jfif" alt="Logo Pastelería Española" class="logo-image">
-                
-            </div>
+                       
             
-            <ul id="nav-items" class="nav-items">
-                <li><a href="#home" class="nav-links">HOME</a></li>
-                <li><a href="#menu" class="nav-links">MENU</a></li>
-                <li><a href="#gallery" class="nav-links">GALERIA</a></li>
-                <li><a href="#map" class="nav-links">UBICACION</a></li>
-                <li><a href="#footer" class="nav-links">CONTACTO</a></li>
-            </ul>
-        
-            <ul class="nav-btns">
-        
-                <div class="cart-btn-wrapper nav-icon">
-                    <i class="cartbtn bx bx-cart"></i>
-                    <div id="cart" class="cart flex-row">
-                        <span>No Products In The Cart</span>
-                    </div>
-                </div>
-        
-                <div class="nav-icon">
-                    <i class="darkbtn bx bx-moon"></i>
-                </div>
-            </ul>
-        </nav>
-        
+        </div>
+        <div id="notification" class="notification hidden"></div>
 
-        <!-------------- Navbar End-------------->
+        <!-- Botón de modo oscuro -->
+        <div class="nav-icon">
+            <i class="darkbtn bx bx-moon"></i>
+        </div>
+    </ul>
+</nav>
+
+<!-------------- Navbar End-------------->
 
 
     </header>
@@ -7968,6 +7973,7 @@
 
     <!-------------- Local JS Script -------------->
     <script src="/JS/script.js"></script>
+    <script src="/JS/cart.js"></script>
 
 </body>
 

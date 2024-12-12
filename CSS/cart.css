@@ -1,0 +1,193 @@
+/* Contenedor principal del carrito */
+#cart {
+    background-color: var(--bg-color-1);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 400px; /* Ajustar ancho */
+    z-index: 1000;
+    display: none;
+    max-height: 500px; /* Altura máxima con scroll */
+    overflow-y: auto;
+}
+
+/* Mostrar carrito cuando está activo */
+#cart.active {
+    display: block;
+}
+
+/* Lista de productos */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Asegura que los productos estén en columna */
+    gap: 15px; /* Espacio entre productos */
+}
+
+/* Cada producto */
+#cart-items li {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido del producto en columna */
+    padding: 10px;
+    border-bottom: 1px solid var(--grey-color);
+    background-color: var(--bg-color-2);
+    border-radius: 8px;
+}
+
+/* Contenedor principal del producto */
+.product-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Imagen del producto */
+.product-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Texto del producto */
+.product-container .product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-color);
+    flex: 1;
+}
+
+.product-container .product-price {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+/* Controles de cantidad */
+.quantity-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    background-color: #b85a3d;
+}
+
+.quantity-controls span {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Botón de eliminar */
+.delete-product {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.delete-product:hover {
+    background-color: darkred;
+}
+
+/* Botón de vaciar carrito */
+#clear-cart {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#clear-cart:hover {
+    background-color: #b85a3d;
+}
+
+/* Estilo de la notificación */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1100;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+}
+
+/* Mostrar notificación */
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ocultar notificación */
+.notification.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+#whatsapp-button {
+    background-color: #25D366; /* Color típico de WhatsApp */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#whatsapp-button:hover {
+    background-color: #1DA955; /* Un tono más oscuro para el hover */
+    
+}
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+#cart-total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
