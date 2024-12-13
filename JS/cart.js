@@ -177,7 +177,7 @@ function updateCart() {
         whatsappButton.style.fontSize = "16px";
         whatsappButton.style.marginTop = "10px";
         whatsappButton.onclick = () => {
-            const phoneNumber = "593961166952";
+            const phoneNumber = "593969918935";
             let message = "Hola, me gustaría hacer un pedido:\n\n";
             cartItems.forEach(item => {
                 message += `- ${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}\n`;
