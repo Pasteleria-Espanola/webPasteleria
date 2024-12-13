@@ -180,7 +180,7 @@ function updateCart() {
             const phoneNumber = "593961166952";
             let message = "Hola, me gustaría hacer un pedido:\n\n";
             cartItems.forEach(item => {
-                message += `- ${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}\n`;
+                message += `- ${item.name}  - $${(item.price * item.quantity).toFixed(2)}\n`;
             });
             message += `\nTotal: $${total.toFixed(2)}`;
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
